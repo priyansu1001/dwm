@@ -114,6 +114,7 @@ static const Key keys[] = {
 	{ 0, XF86XK_MonBrightnessUp,   spawn, SHCMD("brightnessctl set +5%") },// rbightness up
 	{ ControlMask, XK_Print, spawn, {.v = flameshotcmd } }, // ctrl + printscrn
 	{ Mod1Mask|ShiftMask, XK_z, spawn, SHCMD("flameshot gui -r > /tmp/flameshot.png && tesseract /tmp/flameshot.png stdout | xclip -selection clipboard") }, /* ocr = alt + shift + Z */
+	{ ControlMask|ShiftMask|Mod1Mask, XK_z, spawn, SHCMD("boomer") },
 
 };
 
